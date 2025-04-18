@@ -28,12 +28,12 @@ def transfer_large_files(old_uri, new_uri, batch_size=5000, timeout_ms=300000):
         )
 
         # Focus on specific DB (replace 'telegram_db' with your actual DB name)
-        db_name = "telegram_db"  
+        db_name = "PIRO"  
         old_db = old_client[db_name]
         new_db = new_client[db_name]
 
         # Target collection (replace 'files' with your collection name)
-        collection_name = "files"  
+        collection_name = "FILES"  
         old_col = old_db[collection_name]
         new_col = new_db[collection_name]
 

@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  migrator:
+    image: yourusername/mongodb-migrate
+    environment:
+      - OLD_MONGODB_URI=${OLD_MONGODB_URI}
+      - NEW_MONGODB_URI=${NEW_MONGODB_URI}
+    deploy:
+      resources:
+        limits:
+          memory: 1G
